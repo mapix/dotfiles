@@ -1,0 +1,10 @@
+syntax enable
+set noautochdir
+colorscheme solarized
+set background=dark
+let g:pymode_rope_lookup_project = 0
+let g:NERDTreeChDirMode=0
+let g:NERDTreeQuitOnOpen=0
+let g:NERDTreeDirArrows=0
+let g:NERDTreeIgnore=['\.o$', '\~$', '*\.pyc', '\.ropeproject[[dir]]']
+set fileencodings=utf-8,cp936,gb18030,big5,euc-jp,euc-kr,latin1
