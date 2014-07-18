@@ -9,6 +9,11 @@ ln -s ${DOT_ROOT_DIR}/config/.tmux.conf ~/
 ln -s ${DOT_ROOT_DIR}/config/.vimrc.bundles.local ~/ 
 ln -s ${DOT_ROOT_DIR}/config/.vimrc.local ~/ 
 
+echo 'processing git config ... '
+git config --global user.email "mapix.me@gmail.com"
+git config --global user.name "mapix"
+git config --global core.excludesfile ~/.gitignore_global
+
 echo 'processing spf13-vim ... '
 cd $HOME
 curl https://j.mp/spf13-vim3 -L > spf13-vim.sh && sh spf13-vim.sh
