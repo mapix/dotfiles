@@ -2,12 +2,12 @@
 
 set -x
 
+echo 'processing dot files... '
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-DOT_ROOT_DIR="$( dirname "${DIR}")"
-ln -s ${DOT_ROOT_DIR}/config/.pip  ~/ 
-ln -s ${DOT_ROOT_DIR}/config/.tmux.conf ~/ 
-ln -s ${DOT_ROOT_DIR}/config/.vimrc.bundles.local ~/ 
-ln -s ${DOT_ROOT_DIR}/config/.vimrc.local ~/ 
+ln -sf ${DIR}/config/.pip  ~/ 
+ln -sf ${DIR}/config/.tmux.conf ~/ 
+ln -sf ${DIR}/config/.vimrc.bundles.local ~/ 
+ln -sf ${DIR}/config/.vimrc.local ~/ 
 
 echo 'processing git config ... '
 git config --global user.email "mapix.me@gmail.com"
